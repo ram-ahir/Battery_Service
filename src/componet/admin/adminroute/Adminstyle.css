@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    padding: 15px;
+    position: fixed;
+    width: 250px;
+    transition: all 0.3s;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.sidebar.hide {
+    margin-left: -250px;
+}
+
+.content.full {
+    margin-left: 0;
+}
+
+.toggle-btn {
+    position: fixed;
+    height: 35px;
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

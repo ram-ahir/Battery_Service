@@ -1,0 +1,10 @@
+@media  (max-width: 576px)  {
+ 
+    .foot p{
+        margin-bottom: 0px !important;
+    }
+}
+
+.foot a:hover{
+    cursor: pointer !important;
+}

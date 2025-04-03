@@ -1,0 +1,26 @@
+
+
+#map {
+    /* height: 300px;
+    width: 100%; */
+    background-color: #ddd;
+    
+}
+.dealer-card:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+
+/* ##########################################################################  model st*/
+
+
+.modal-dialog-centered{
+
+max-width: 100% !important;
+
+}
+
+
+
+/* ##########################################################################  model end*/

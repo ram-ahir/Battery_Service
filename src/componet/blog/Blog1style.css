@@ -1,0 +1,24 @@
+.hero-section {
+    background: #ffcc00;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+.step-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.step-card:hover {
+    transform: scale(1.05);
+}
+.step-icon {
+    font-size: 40px;
+    color: #ff9800;
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}

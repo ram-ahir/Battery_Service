@@ -1,0 +1,170 @@
+
+
+/* ##########################################################################  navbar */
+.nav{
+    position: fixed !important;
+}
+.nav1{
+    height: 50px;
+    background-color: black;
+}
+.logo{
+    height: 35px;
+    width: 55px;
+}
+.navbarul{
+    list-style: none;
+}
+.navbarul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navbarli{
+    display: inline;
+}
+.navbarli:hover{
+    background-color: white!important;
+}
+.navbarli:hover .nav-link{
+    color: black!important;
+    font-weight: 500!important;
+}
+.nav-link{
+    display: inline;
+    line-height: 17px;
+    font-weight: 500!important;
+
+}
+.nav-link:hover{
+    text-decoration: none;
+}
+.profile-pic{
+    margin-left: 7px;
+    padding-bottom: 2px;
+}
+.profile-pic:hover{
+    cursor: pointer;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.cart{
+    padding-bottom: 2px;
+}
+.lgc{
+    line-height: 15px;
+}
+.lg-head{
+    font-weight: bold;
+}
+.lg-cont{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+
+
+/* ////////////////////// */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-list{
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.dropdown .dropdown-list li{
+    margin-bottom: 10px;
+    font-size: medium;
+    color: black;
+}
+
+.dropdown .dropdown-list li:hover{
+    color: #ef6603;
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.offcanvas-body li{
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+/* ############################################# profile st */
+
+.profile-dropdown {
+    width: 230px; /* Set width */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 10px;
+    right: 0px !important;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.profile-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile-header div {
+    font-size: 14px;
+}
+.profile-header strong {
+    font-size: 16px;
+}
+.profile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.profile-menu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.profile-menu li:hover {
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+.profile-menu i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+/* ############################################# profile end */
+
+.cartbadge{
+    text-align: center !important;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* ##########################################################################  navbar end*/

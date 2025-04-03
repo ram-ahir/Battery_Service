@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+}
+.action-icons i {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.action-icons .edit {
+    color: #ffc107;
+}
+.action-icons .delete {
+    color: #dc3545;
+}

@@ -1,0 +1,54 @@
+.car-img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.car-card {
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
+    transition: transform .2sease, box-shadow .2sease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1) !important;
+    transition: 0.3s;
+    scale: 1;
+}
+.car-card:hover{
+    scale: 1.03;
+}
+
+.car-img {
+    width: 60px;
+    height: auto;
+}
+
+.car-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.fuel-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    width: 50px;
+}
+
+.fuel-icon {
+    width: 30px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.fuel-text {
+    font-size: 10px;
+    margin-top: 4px;
+}
+.accordion-body{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}

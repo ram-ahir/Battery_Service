@@ -1,0 +1,10 @@
+.map {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+}
+.dealer-card:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+

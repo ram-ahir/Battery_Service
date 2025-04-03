@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+.out-main{
+    background-color: #dddddd;
+}
+
+.sec1{
+    height: auto;
+    background-color: white;
+
+}
+.sec1 .img{
+    height: 50vh;
+    width: 100%;
+    background-image: url(./img/sec-1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.sec1 .cont{
+    height: auto;
+    width: 100%;
+}
+
+/* #################################################### section-2 st */
+
+.section-2,.section-3{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.hline1{
+    height: 200px;
+    background-color: white;
+}
+.hline1 .img1{
+    background-image: url(./img/sec-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    transform:rotateZ(4deg);
+    box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.8); 
+    transition: 0.5s;
+    scale: 1;
+}
+.hline1 .img1:hover{
+    scale: 1.03;
+
+}
+.cont1 ,.cont2{
+    width: 75% !important;
+}
+
+/* #################################################### section-3 st */
+
+.hline2{
+    height: 200px;
+    background-color: white;
+}
+.hline2 .img2{
+    background-image: url(./img/sec-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    transform:rotateZ(-4deg);
+    box-shadow: 0px 16px 64px 15px rgba(0, 0, 0, 0.8); 
+    transition: 0.5s;
+    scale: 1;
+}
+.hline2 .img2:hover{
+    scale: 1.03;
+
+}
+
+
+
+
+/* ########################################################### */
+
+
+
+
+/* ###########################################################  why us st*/
+
+.why-us{
+    background-color: #dddddd!important;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.why-choose-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+.why-choose-section h2 {
+    font-weight: bold;
+    color: black;
+}
+.feature-box {
+    color: black;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    /* box-shadow: 0px 4px 10px rgba(255, 38, 126, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+
+}
+.feature-box:hover {
+    background: white;
+    /* box-shadow: 10px 6px 15px 10px rgba(0, 0, 0, 0.9); */
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.feature-icon {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+
+/* ###########################################################  why us end*/
+
+
+/* ###########################################################  customer review st*/
+
+.customer{
+    /* background-color: #f8f9fa; */
+    font-family: Arial, sans-serif;
+}
+
+.review-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+.review-section h2 {
+    font-weight: bold;
+    color: black;
+}
+.swiper-container {
+    overflow: hidden;
+    padding: 20px;
+}
+.swiper-slide {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+.swiper-slide:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.review-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.review-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.review-role {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.review-stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+.review-text {
+    font-style: italic;
+    color: #555;
+}
+
+
+
+
+/* ###########################################################  customer review end*/
+
+
+
+
+
+
+@media  (max-width: 576px)  {
+    .heading{
+        margin-bottom: 0px !important;
+    }
+    .headcont{
+        font-size: x-small;
+        margin-bottom: 5px !important;
+
+    }
+    .bt .btn{
+        font-size: 10px !important;
+    }
+    .cont1 ,.cont2{
+        width: 100% !important;
+    }
+    .hline1 ,.hline2{
+        height: 130px;
+    }
+    .hline1 .img1{
+        height: 160px;
+        border-radius: 12px !important;
+    }
+    .hline2 .img2{
+        height: 160px;
+        border-radius: 12px !important;
+
+    }
+    .section-2,.section-3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .sec1 .img{
+        height: 200px;
+    }
+
+
+
+    /* foter st*/
+
+    .foot p{
+        margin-bottom: 0px !important;
+    }
+    /* foter end*/
+}
