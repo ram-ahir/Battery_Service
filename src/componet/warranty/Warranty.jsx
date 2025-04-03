@@ -1,5 +1,5 @@
 import React from 'react'
-import './warrantystyle.css'
+import './Warrantystyle.css'
 const Warranty = () => {
     return (
         <div>
