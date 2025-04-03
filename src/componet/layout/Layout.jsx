@@ -10,7 +10,7 @@ import Blog2 from "../blog/Blog2";
 import Blog3 from "../blog/Blog3";
 import Allprod from "../allprod/Allprod";
 import Cart from "../cart/Cart";
-import Dealer from "../dealer/dealer";
+import Dealer from "../dealer/Dealer";
 import Findby from "../findby/Findby";
 import Oneprod from "../oneprod/Oneprod";
 import Service from "../sevice/Service";
