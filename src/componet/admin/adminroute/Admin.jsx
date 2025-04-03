@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from '../admin-menu/menu'
+import Menu from '../admin-menu/Menu'
 import './Adminstyle.css'
 import Deshboard from '../deshboard/Deshboard'
 import Product from '../product/Product'
