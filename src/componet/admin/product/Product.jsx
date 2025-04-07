@@ -54,10 +54,13 @@ const Product = () => {
 
         const formData = new FormData();
         formData.append("file", updtimg);
+        formData.append("upload_preset", "battery"); // Replace with actual preset
+        formData.append("cloud_name", "dcbykcqbe"); // Your cloud name
 
         try {
             const response = await fetch(
-                "http://clickandcall.spectricssolutions.com/apilist/flutter_image.php",
+                // "http://clickandcall.spectricssolutions.com/apilist/flutter_image.php",
+                "https://api.cloudinary.com/v1_1/dcbykcqbe/upload",
                 {
                     method: "POST",
                     body: formData,
@@ -71,8 +74,9 @@ const Product = () => {
             const result = await response.json();
             console.log("Image Upload Response:", result);
 
-            if (result.image_url) {
-                return result.image_url; // Return the uploaded image URL
+            if (result.url) {
+                console.log(result.url)
+                return result.url; // Return the uploaded image URL
             } else {
                 throw new Error("No image URL returned from API");
             }
@@ -116,7 +120,7 @@ const Product = () => {
             }
 
 
-            const productRef = doc(db, "batterytest", updtid); // ✅ Properly create a document reference
+            const productRef = doc(db, "battery", updtid); // ✅ Properly create a document reference
 
             await setDoc(productRef, {
                 imageUrl: newImageUrl,
@@ -191,6 +195,7 @@ const Product = () => {
     const handleFileChange = (e) => {
         if (e.target.files[0]) {
             setImage(e.target.files[0]);
+            console.log(e.target.files[0]);
         }
     };
     // #############  handleFileChange end
@@ -204,11 +209,14 @@ const Product = () => {
 
         const formData = new FormData();
         formData.append("file", image);
+        formData.append("upload_preset", "battery"); // Replace with actual preset
+        formData.append("cloud_name", "dcbykcqbe"); // Your cloud name
 
         try {
             console.log("Uploading image..."); // Debug log
             const response = await fetch(
-                "http://clickandcall.spectricssolutions.com/apilist/flutter_image.php",
+                // "http://clickandcall.spectricssolutions.com/apilist/flutter_image.php",
+                "https://api.cloudinary.com/v1_1/dcbykcqbe/upload",
                 {
                     method: "POST",
                     body: formData,
@@ -222,9 +230,10 @@ const Product = () => {
             const result = await response.json();
             console.log("Upload success:", result); // Debug log
 
-            if (result.image_url) {
-                setImageUrl(result.image_url);
-                return result.image_url; // Make sure API returns imageUrl
+            if (result.url) {
+                setImageUrl(result.url);
+                console.log(result.url);
+                return result.url; // Make sure API returns imageUrl
             } else {
                 throw new Error("No image URL returned from API");
             }
@@ -293,7 +302,7 @@ const Product = () => {
 
                         // Firestore document data
                         const batteryData = {
-                            imageUrl:`http://clickandcall.spectricssolutions.com/apilist/uploads/${modelName}.webp`,
+                            imageUrl: `http://clickandcall.spectricssolutions.com/apilist/uploads/${modelName}.webp`,
                             model: `${modelName}`,
                             capacity: `${capacity}Ah`,
                             voltage: `${voltage}V`,
@@ -404,7 +413,7 @@ const Product = () => {
                 {productall.map((prod, index) => (
                     <div className="col-lg-3 col-sm-6" key={prod.id || index}>
                         <div className="card product-card">
-                            <img src={prod.imageUrl||"/sec-2.jpg"} className="product-img" alt="Battery" />
+                            <img src={prod.imageUrl || "/sec-2.jpg"} className="product-img" alt="Battery" />
                             <div className="card-body  w-100">
                                 <h5 className="card-title"><b>Battery Model </b>{prod.model}</h5>
                                 <p className="mb-0 fs-6"><b>Capacity:</b> {prod.capacity}</p>
